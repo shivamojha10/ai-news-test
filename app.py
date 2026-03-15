@@ -13,7 +13,7 @@ if st.button("Generate Briefing"):
             try:
                 # Call our local FastAPI endpoint
                 response = requests.post(
-                    "http://127.0.0.1:8000/research", 
+                    "https://ai-news-test.onrender.com/research", 
                     json={"event_name": event_query}
                 )
                 
